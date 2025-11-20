@@ -15,6 +15,7 @@
     <modules>
         <module>person-mcp-server</module>
         <module>account-mcp-server</module>
+        <module>sample-client</module>
     </modules>
 
 
