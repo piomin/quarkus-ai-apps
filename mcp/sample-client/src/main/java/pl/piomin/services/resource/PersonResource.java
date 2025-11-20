@@ -8,6 +8,7 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import pl.piomin.services.ai.PersonService;
 import pl.piomin.services.domain.Person;
+import pl.piomin.services.domain.Persons;
 
 import java.util.List;
 
@@ -23,7 +24,8 @@ public class PersonResource {
     @POST
     @Path("/nationality/{nationality}")
     public List<Person> findByNationality(String nationality) {
-        return personService.findByNationality(nationality).getPersons();
+        Persons p = personService.findByNationality(nationality);
+        return p.getPersons();
     }
 
     @POST

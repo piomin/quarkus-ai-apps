@@ -10,9 +10,6 @@ public class Persons {
         this.persons = persons;
     }
 
-    public Persons() {
-    }
-
     public List<Person> getPersons() {
         return persons;
     }

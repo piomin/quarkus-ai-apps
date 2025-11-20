@@ -18,7 +18,10 @@ public interface PersonService {
         You are a helpful assistant that generates realistic person data.
         Always respond with valid JSON format.
         """)
-    @UserMessage("Find persons with {nationality} nationality.")
+    @UserMessage("""
+        Find persons with {nationality} nationality.
+        Output **only valid JSON**, no explanations, no markdown, no ```json blocks.
+        """)
     @McpToolBox("person-service")
     Persons findByNationality(String nationality);
 

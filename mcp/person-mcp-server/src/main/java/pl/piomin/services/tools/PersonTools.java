@@ -4,6 +4,7 @@ import io.quarkiverse.mcp.server.Tool;
 import io.quarkiverse.mcp.server.ToolArg;
 import jakarta.enterprise.context.ApplicationScoped;
 import pl.piomin.services.domain.Person;
+import pl.piomin.services.domain.Persons;
 import pl.piomin.services.repository.PersonRepository;
 
 import java.util.List;
@@ -24,8 +25,8 @@ public class PersonTools {
     }
 
     @Tool(description = "Find all persons by nationality")
-    public List<Person> getPersonsByNationality(
+    public Persons getPersonsByNationality(
             @ToolArg(description = "Nationality") String nationality) {
-        return personRepository.findByNationality(nationality);
+        return new Persons(personRepository.findByNationality(nationality));
     }
 }
