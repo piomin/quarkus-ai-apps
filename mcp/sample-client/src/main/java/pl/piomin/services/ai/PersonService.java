@@ -33,4 +33,11 @@ public interface PersonService {
     @McpToolBox("person-service")
     int countByNationality(String nationality);
 
+    @SystemMessage("""
+        You are a helpful assistant that generates realistic person data.
+        Always respond with valid JSON format.
+        """)
+    @McpToolBox("person-service")
+    Persons findByNationalityWithPrompt(@UserMessage String userMessage, String nationality);
+
 }
