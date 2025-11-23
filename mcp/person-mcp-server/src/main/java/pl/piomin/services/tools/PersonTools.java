@@ -7,8 +7,6 @@ import pl.piomin.services.domain.Person;
 import pl.piomin.services.domain.Persons;
 import pl.piomin.services.repository.PersonRepository;
 
-import java.util.List;
-
 @ApplicationScoped
 public class PersonTools {
 
