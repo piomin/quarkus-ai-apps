@@ -6,6 +6,7 @@ public class Persons {
 
     private List<Person> persons;
 
+    public Persons() {}
     public Persons(List<Person> persons) {
         this.persons = persons;
     }
