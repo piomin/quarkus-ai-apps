@@ -11,6 +11,10 @@
 
     <artifactId>sample-client</artifactId>
 
+    <properties>
+        <sonar.moduleKey>sample-client</sonar.moduleKey>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>

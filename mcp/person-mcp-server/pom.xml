@@ -11,6 +11,10 @@
 
     <artifactId>person-mcp-server</artifactId>
 
+    <properties>
+        <sonar.moduleKey>person-mcp-server</sonar.moduleKey>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkiverse.mcp</groupId>

@@ -12,6 +12,10 @@
     <artifactId>mcp</artifactId>
     <packaging>pom</packaging>
 
+    <properties>
+        <sonar.moduleKey>mcp</sonar.moduleKey>
+    </properties>
+
     <modules>
         <module>person-mcp-server</module>
         <module>account-mcp-server</module>

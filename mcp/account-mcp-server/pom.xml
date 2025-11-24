@@ -11,6 +11,10 @@
 
     <artifactId>account-mcp-server</artifactId>
 
+    <properties>
+        <sonar.moduleKey>account-mcp-server</sonar.moduleKey>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.quarkiverse.mcp</groupId>
