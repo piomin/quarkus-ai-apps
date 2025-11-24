@@ -6,6 +6,9 @@ public class Accounts {
 
     private List<Account> accounts;
 
+    public Accounts() {
+    }
+
     public Accounts(List<Account> accounts) {
         this.accounts = accounts;
     }
