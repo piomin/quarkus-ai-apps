@@ -9,8 +9,8 @@ import java.util.List;
 @ApplicationScoped
 public class PersonRepository implements PanacheRepository<Person> {
 
-    public List<Person> findByName(String name) {
-        return find("name", name).list();
+    public List<Person> findByName(String firstName, String lastName) {
+        return find("firstName = ?1 and lastName = ?2", firstName, lastName).list();
     }
 
     public List<Person> findByAgeGreaterThan(int age) {

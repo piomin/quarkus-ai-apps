@@ -18,7 +18,7 @@ public class PersonTools {
 
     @Tool(description = "Find person by ID")
     public Person getPersonById(
-            @ToolArg(description = "Person ID") Long id) {
+            @ToolArg(name = "id", description = "Person ID") Long id) {
         return personRepository.findById(id);
     }
 

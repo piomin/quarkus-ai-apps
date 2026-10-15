@@ -1,0 +1,6 @@
+/home/runner/work/quarkus-ai-apps/quarkus-ai-apps/mcp/person-mcp-server/src/main/java/pl/piomin/services/domain/Gender.java
+/home/runner/work/quarkus-ai-apps/quarkus-ai-apps/mcp/person-mcp-server/src/main/java/pl/piomin/services/domain/Person.java
+/home/runner/work/quarkus-ai-apps/quarkus-ai-apps/mcp/person-mcp-server/src/main/java/pl/piomin/services/domain/Persons.java
+/home/runner/work/quarkus-ai-apps/quarkus-ai-apps/mcp/person-mcp-server/src/main/java/pl/piomin/services/repository/PersonRepository.java
+/home/runner/work/quarkus-ai-apps/quarkus-ai-apps/mcp/person-mcp-server/src/main/java/pl/piomin/services/tools/PersonPrompts.java
+/home/runner/work/quarkus-ai-apps/quarkus-ai-apps/mcp/person-mcp-server/src/main/java/pl/piomin/services/tools/PersonTools.java

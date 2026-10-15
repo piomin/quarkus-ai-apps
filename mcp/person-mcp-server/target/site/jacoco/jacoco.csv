@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+person-mcp-server,pl.piomin.services.domain,Persons,0,16,0,0,0,7,0,4,0,4
+person-mcp-server,pl.piomin.services.domain,Person,3,0,0,0,1,0,1,0,1,0
+person-mcp-server,pl.piomin.services.domain,Gender,0,15,0,0,0,2,0,1,0,1
+person-mcp-server,pl.piomin.services.repository,PersonRepository,41,0,0,0,4,0,4,0,4,0
+person-mcp-server,pl.piomin.services.tools,PersonPrompts,18,0,0,0,4,0,2,0,2,0
+person-mcp-server,pl.piomin.services.tools,PersonTools,20,0,0,0,5,0,3,0,3,0

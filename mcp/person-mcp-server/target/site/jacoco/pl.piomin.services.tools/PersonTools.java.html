@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PersonTools.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">person-mcp-server</a> &gt; <a href="index.source.html" class="el_package">pl.piomin.services.tools</a> &gt; <span class="el_source">PersonTools.java</span></div><h1>PersonTools.java</h1><pre class="source lang-java linenums">package pl.piomin.services.tools;
+
+import io.quarkiverse.mcp.server.Tool;
+import io.quarkiverse.mcp.server.ToolArg;
+import jakarta.enterprise.context.ApplicationScoped;
+import pl.piomin.services.domain.Person;
+import pl.piomin.services.domain.Persons;
+import pl.piomin.services.repository.PersonRepository;
+
+@ApplicationScoped
+public class PersonTools {
+
+    PersonRepository personRepository;
+
+<span class="nc" id="L15">    public PersonTools(PersonRepository personRepository) {</span>
+<span class="nc" id="L16">        this.personRepository = personRepository;</span>
+<span class="nc" id="L17">    }</span>
+
+    @Tool(description = &quot;Find person by ID&quot;)
+    public Person getPersonById(
+            @ToolArg(name = &quot;id&quot;, description = &quot;Person ID&quot;) Long id) {
+<span class="nc" id="L22">        return personRepository.findById(id);</span>
+    }
+
+    @Tool(description = &quot;Find all persons by nationality&quot;)
+    public Persons getPersonsByNationality(
+            @ToolArg(description = &quot;Nationality&quot;) String nationality) {
+<span class="nc" id="L28">        return new Persons(personRepository.findByNationality(nationality));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.15.202606040825</span></div></body></html>
