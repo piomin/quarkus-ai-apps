@@ -20,7 +20,7 @@ public class AccountToolsTest {
     public void testGetAccountsByPersonId() {
         McpAssured.McpSseTestClient client = McpAssured.newConnectedSseClient();
         client.when()
-                .toolsCall("getAccountsByPersonId", Map.of("personId", 1),
+                .toolsCall("getAccountsByPersonId", Map.of("personId", 1L),
                         r -> {
                             try {
                                 Accounts a = mapper.readValue(r.content().getFirst().asText().text(), Accounts.class);

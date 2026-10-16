@@ -37,7 +37,7 @@ public class PersonToolsTest {
     public void testGetPersonById() {
         McpAssured.McpSseTestClient client = McpAssured.newConnectedSseClient();
         client.when()
-                .toolsCall("getPersonById", Map.of("id", 10),
+                .toolsCall("getPersonById", Map.of("id", 1L),
                         r -> {
                             try {
                                 Person p = mapper.readValue(r.content().getFirst().asText().text(), Person.class);
