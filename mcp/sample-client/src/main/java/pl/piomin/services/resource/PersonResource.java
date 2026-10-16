@@ -47,6 +47,6 @@ public class PersonResource {
 
     private String loadPrompt(String nationality) {
         McpGetPromptResult prompt = mcpClient.getPrompt("findByNationalityPrompt", Map.of("nationality", nationality));
-        return ((TextContent) prompt.messages().getFirst().content().toContent()).text();
+        return ((TextContent) prompt.messages().get(0).content().toContent()).text();
     }
 }
