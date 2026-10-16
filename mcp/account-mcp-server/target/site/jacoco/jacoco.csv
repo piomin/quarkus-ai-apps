@@ -1,5 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-account-mcp-server,pl.piomin.services.domain,Account,3,0,0,0,1,0,1,0,1,0
-account-mcp-server,pl.piomin.services.domain,Accounts,0,16,0,0,0,8,0,4,0,4
-account-mcp-server,pl.piomin.services.repository,AccountRepository,14,0,0,0,2,0,2,0,2,0
-account-mcp-server,pl.piomin.services.tools,AccountTools,14,0,0,0,4,0,2,0,2,0

@@ -1,6 +1,0 @@
-pl/piomin/services/domain/Person.class
-pl/piomin/services/tools/PersonPrompts.class
-pl/piomin/services/repository/PersonRepository.class
-pl/piomin/services/domain/Gender.class
-pl/piomin/services/tools/PersonTools.class
-pl/piomin/services/domain/Persons.class
