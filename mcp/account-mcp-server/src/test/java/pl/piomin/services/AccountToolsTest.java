@@ -23,7 +23,7 @@ public class AccountToolsTest {
                 .toolsCall("getAccountsByPersonId", Map.of("personId", 1L),
                         r -> {
                             try {
-                                Accounts a = mapper.readValue(r.content().get(0).asText().text(), Accounts.class);
+                                Accounts a = mapper.readValue(r.content().getFirst().asText().text(), Accounts.class);
                                 assertFalse(a.getAccounts().isEmpty());
                             } catch (JsonProcessingException e) {
                                 throw new RuntimeException(e);

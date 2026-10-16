@@ -24,7 +24,7 @@ public class PersonToolsTest {
                 .toolsCall("getPersonsByNationality", Map.of("nationality", "Denmark"),
                         r -> {
                             try {
-                                Persons p = mapper.readValue(r.content().get(0).asText().text(), Persons.class);
+                                Persons p = mapper.readValue(r.content().getFirst().asText().text(), Persons.class);
                                 assertFalse(p.getPersons().isEmpty());
                             } catch (JsonProcessingException e) {
                                 throw new RuntimeException(e);
@@ -40,7 +40,7 @@ public class PersonToolsTest {
                 .toolsCall("getPersonById", Map.of("id", 1L),
                         r -> {
                             try {
-                                Person p = mapper.readValue(r.content().get(0).asText().text(), Person.class);
+                                Person p = mapper.readValue(r.content().getFirst().asText().text(), Person.class);
                                 assertNotNull(p);
                                 assertNotNull(p.id);
                             } catch (JsonProcessingException e) {
